@@ -1,0 +1,25 @@
+<table>
+<tr>
+<th>
+Name
+</th>
+<th>
+Age
+</th>
+<th>
+Number
+</th>
+<th>
+Area
+</th>
+</tr>
+<% @girls.each do | girl | %>
+<tr>
+<td><%= girl.name %></td>
+<td><%= girl.age %></td>
+<td><%= girl.number %></td>
+<td><%= girl.area %></td>
+<td><%= link_to 'Edit', edit_girl_path(girl) %></td>
+</tr>
+<% end %>
+</table>
